@@ -6,14 +6,14 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="header-logo">
-    <a href="index.html"><img src="https://via.placeholder.com/140x72" alt="Логотип города Седона"></a>
-  </div>
+  <a href="index.html"><img src="https://via.placeholder.com/140x72" class="header-logo"
+                            alt="Логотип города Седона"></a>
+
   <nav>
     <ul class="site-navigation">
       <li class="item-navigation-left"><a href="">Информация</a></li>
       <li class="item-navigation-left"><a href="">Фото и видео</a></li>
-      <li class="item-navigation-right"><a href="index.html#map-wrapper">Карта штата</a></li>
+      <li class="item-navigation-right"><a href="index.html#map">Карта штата</a></li>
       <li class="item-navigation-right"><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
@@ -39,11 +39,17 @@
           <span class="hotel-type">Гостиница</span>
           <b>От 4000 Р.</b>
         </p>
-        <div class="hotel-btn">
-          <a class="btn hotel-btn-more" href="">Подробнее</a>
-          <a class="btn hotel-btn-book" href="">Забронировать</a>
+        <div class="hotel-buttons">
+          <a class="btn hotel-buttons-more" href="">Подробнее</a>
+          <a class="btn hotel-buttons-book" href="">Забронировать</a>
         </div>
         <div class="hotel-rates">
+          <ul class="hotel-rates-stars">
+            <li class="hotel-rates-star"></li>
+            <li class="hotel-rates-star"></li>
+            <li class="hotel-rates-star"></li>
+            <li class="hotel-rates-star"></li>
+          </ul>
           <p class="hotel-rates-desc">Рейтинг: 8,5</p>
         </div>
 
@@ -58,11 +64,16 @@
           <span class="hotel-type">Мотель</span>
           <b>От 3000 Р.</b>
         </p>
-        <div class="hotel-btn">
-          <a class="btn hotel-btn-more" href="">Подробнее</a>
-          <a class="btn hotel-btn-book" href="">Забронировать</a>
+        <div class="hotel-buttons">
+          <a class="btn hotel-buttons-more" href="">Подробнее</a>
+          <a class="btn hotel-buttons-book" href="">Забронировать</a>
         </div>
         <div class="hotel-rates">
+          <ul class="hotel-rates-stars">
+            <li class="hotel-rates-star"></li>
+            <li class="hotel-rates-star"></li>
+            <li class="hotel-rates-star"></li>
+          </ul>
           <p class="hotel-rates-desc">Рейтинг: 8,9</p>
         </div>
       </li>
@@ -76,11 +87,15 @@
           <span class="hotel-type">Апартаменты</span>
           <b>От 2000 Р.</b>
         </p>
-        <div class="hotel-btn">
-          <a class="btn hotel-btn-more" href="">Подробнее</a>
-          <a class="btn hotel-btn-book" href="">Забронировать</a>
+        <div class="hotel-buttons">
+          <a class="btn hotel-buttons-more" href="">Подробнее</a>
+          <a class="btn hotel-buttons-book" href="">Забронировать</a>
         </div>
         <div class="hotel-rates">
+          <ul class="hotel-rates-stars">
+            <li class="hotel-rates-star"></li>
+            <li class="hotel-rates-star"></li>
+          </ul>
           <p class="hotel-rates-desc">Рейтинг: 9,2</p>
         </div>
 
@@ -89,9 +104,10 @@
   </section>
 </main>
 <footer class="page-footer">
-  <p class="footer-hashtag">
-    #visitsedona
-  </p>
+  <div class="footer-contacts">
+    <p class="footer-hashtag">#visitsedona</p>
+    <p class="footer-phone">Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p>
+  </div>
   <div class="footer-social">
     <ul>
       <li><a href="">Твитер</a></li>
