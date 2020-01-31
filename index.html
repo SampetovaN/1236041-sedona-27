@@ -19,14 +19,15 @@
 </header>
 <main>
   <section class="site-intro">
-    <h1>Сайт Города Седона</h1>
+    <h1 class="title-hidden">Сайт Города Седона</h1>
     <div class="site-picture">
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="Заголовок сайта города Седона">
+      <img src="img/intro-welcome.svg" width="459" height="353"
+           alt="Заголовок сайта города Седона: Добро пожаловать в прекрасную Седону">
     </div>
     <p class="site-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
   </section>
   <section class="advantages">
-    <h2>Преимущества города Седона</h2>
+    <h2 class="visually-hidden">Преимущества города Седона</h2>
     <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <ul class="advantages-list">
       <li class="advantage">
@@ -58,7 +59,7 @@
           <p class="advantage-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="advantage-photo">
-          <img src="img/feature-picture-2.jpg" width="800" height="256"  alt="Фотография Моста Дьявола">
+          <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фотография Моста Дьявола">
         </div>
       </li>
       <li class="advantage">
@@ -85,16 +86,73 @@
     </ul>
   </section>
   <section class="search-hotels">
-    <h2>Поиск отелей в городе Седона</h2>
+    <h2 class="visually-hidden">Поиск отелей в городе Седона</h2>
     <p class="search-hotels-subheadline">Заинтересовались?</p>
     <p class="search-hotels-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
       седоне</p>
-    <!-- здесь будет форма поиска гостиниц -->
+    <button class="btn search-hotels-form-btn" type="button">Поиск гостиницы в Седоне</button>
+    <form class="search-hotel" method="post" action="URL">
+      <fieldset class="hidden-fieldset">
+        <legend class="visually-hidden">Даты бронирования отеля</legend>
+        <ul class="search-hotel-filter-date">
+          <li><label for="search-hotel-start-date">Дата заезда:</label><input class="search-hotel start-date-book"
+                                                                              type="text"
+                                                                              name="start-date-book"
+                                                                              id="search-hotel-start-date"
+                                                                              placeholder="24 апреля 2017">
+            <button
+              class="search-hotel-btn-calendar"
+              type="button" aria-label="Выбор начальной даты в календаре"></button>
+          </li>
+          <li><label for="search-hotel-end-date">Дата выезда:</label><input class="search-hotel end-date-book"
+                                                                            type="text"
+                                                                            name="end-date-book"
+                                                                            id="search-hotel-end-date"
+                                                                            placeholder="4 июля 2017">
+            <button
+              class="search-hotel-btn-calendar"
+              type="button" aria-label="Выбор конечной даты в календаре"></button>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="hidden-fieldset">
+        <legend class="visually-hidden">Количество человек</legend>
+        <ul class="search-hotel-filter-person-amount">
+          <li><label for="search-hotel-adults-amount">Взрослые:</label>
+            <button class="btn search-hotel-adults-amount-btn-less" type="button"
+                    aria-label="Уменьшение количества взрослых на одну единицу">-
+            </button>
+            <input class="search-hotel adults-amount" type="text"
+                   name="adults-amount-book"
+                   id="search-hotel-adults-amount"
+                   placeholder="2">
+
+            <button class="btn search-hotel-adults-amount-btn-more" type="button"
+                    aria-label="Увеличение количества взрослых на одну единицу">+
+            </button>
+          </li>
+          <li>
+            <label for="search-hotel-children-amount">Дети:</label>
+            <button class="btn search-hotel-children-amount-btn-less" type="button"
+                    aria-label="Уменьшение количества детей на одну единицу">-
+            </button>
+            <input class="search-hotel children-amount" type="text"
+                   name="children-amount-book"
+                   id="search-hotel-children-amount"
+                   placeholder="0">
+            <button class="btn search-hotel-children-amount-btn-more" type="button"
+                    aria-label="Увеличение количества детей на одну единицу">+
+            </button>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="btn search-hotels-btn" type="submit">Найти</button>
+    </form>
   </section>
   <section class="state-map" id="map">
-    <h2>Карта штата города Седона</h2>
+    <h2 class="title-hidden">Карта города Седона</h2>
     <div class="map-wrapper">
-      <img src="img/map.jpg" width="1200" height="594" alt="Карта штата города Седона">
+      <img src="img/map.jpg" width="1200" height="594" alt="Город Седона, штат Аризона, США">
     </div>
   </section>
 </main>
