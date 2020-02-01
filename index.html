@@ -19,7 +19,7 @@
 </header>
 <main>
   <section class="site-intro">
-    <h1 class="title-hidden">Сайт Города Седона</h1>
+    <h1 class="visually-hidden">Сайт Города Седона</h1>
     <div class="site-picture">
       <img src="img/intro-welcome.svg" width="459" height="353"
            alt="Заголовок сайта города Седона: Добро пожаловать в прекрасную Седону">
@@ -91,66 +91,38 @@
     <p class="search-hotels-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
       седоне</p>
     <button class="btn search-hotels-form-btn" type="button">Поиск гостиницы в Седоне</button>
-    <form class="search-hotel" method="post" action="URL">
-      <fieldset class="hidden-fieldset">
-        <legend class="visually-hidden">Даты бронирования отеля</legend>
-        <ul class="search-hotel-filter-date">
-          <li><label for="search-hotel-start-date">Дата заезда:</label><input class="search-hotel start-date-book"
-                                                                              type="text"
-                                                                              name="start-date-book"
-                                                                              id="search-hotel-start-date"
-                                                                              value="24 апреля 2017">
-            <button
-              class="search-hotel-btn-calendar"
-              type="button" aria-label="Выбор начальной даты в календаре"></button>
-          </li>
-          <li><label for="search-hotel-end-date">Дата выезда:</label><input class="search-hotel end-date-book"
-                                                                            type="text"
-                                                                            name="end-date-book"
-                                                                            id="search-hotel-end-date"
-                                                                            value="4 июля 2017">
-            <button
-              class="search-hotel-btn-calendar"
-              type="button" aria-label="Выбор конечной даты в календаре"></button>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="hidden-fieldset">
-        <legend class="visually-hidden">Количество человек</legend>
-        <ul class="search-hotel-filter-person-amount">
-          <li><label for="search-hotel-adults-amount">Взрослые:</label>
-            <button class="btn search-hotel-adults-amount-btn-less" type="button"
-                    aria-label="Уменьшение количества взрослых на одну единицу">-
-            </button>
-            <input class="search-hotel adults-amount" type="text"
-                   name="adults-amount-book"
-                   id="search-hotel-adults-amount"
-                   value="2">
+    <form class="search-hotel" method="post" action="/">
+      <div class="search-hotel-dates">
+        <label for="search-hotel-start-date">Дата заезда:</label>
+        <input class="search-hotels-input" type="text" name="start-date-book" id="search-hotel-start-date"
+               value="24 апреля 2017">
+        <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор начальной даты в календаре"></button>
 
-            <button class="btn search-hotel-adults-amount-btn-more" type="button"
-                    aria-label="Увеличение количества взрослых на одну единицу">+
-            </button>
-          </li>
-          <li>
-            <label for="search-hotel-children-amount">Дети:</label>
-            <button class="btn search-hotel-children-amount-btn-less" type="button"
-                    aria-label="Уменьшение количества детей на одну единицу">-
-            </button>
-            <input class="search-hotel children-amount" type="text"
-                   name="children-amount-book"
-                   id="search-hotel-children-amount"
-                   value="0">
-            <button class="btn search-hotel-children-amount-btn-more" type="button"
-                    aria-label="Увеличение количества детей на одну единицу">+
-            </button>
-          </li>
-        </ul>
-      </fieldset>
+        <label for="search-hotel-end-date">Дата выезда:</label>
+        <input class="search-hotels-input" type="text" name="end-date-book" id="search-hotel-end-date"
+               value="4 июля 2017">
+        <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор конечной даты в календаре"></button>
+      </div>
+      <div class="search-hotel-person-amount">
+        <label for="search-hotel-adults-amount">Взрослые:</label>
+        <button class="btn btn-minus" type="button" aria-label="Уменьшение количества взрослых на одну единицу">-
+        </button>
+        <input class="search-hotels-input" type="text" name="adults-amount-book" id="search-hotel-adults-amount"
+               value="2">
+        <button class="btn btn-plus" type="button" aria-label="Увеличение количества взрослых на одну единицу">+
+        </button>
+
+        <label for="search-hotel-children-amount">Дети:</label>
+        <button class="btn btn-minus" type="button" aria-label="Уменьшение количества детей на одну единицу">-</button>
+        <input class="search-hotels-input" type="text" name="children-amount-book" id="search-hotel-children-amount"
+               value="0">
+        <button class="btn btn-plus" type="button" aria-label="Увеличение количества детей на одну единицу">+</button>
+      </div>
       <button class="btn search-hotels-btn" type="submit">Найти</button>
     </form>
   </section>
   <section class="state-map" id="map">
-    <h2 class="title-hidden">Карта города Седона</h2>
+    <h2 class="visually-hidden">Карта города Седона</h2>
     <div class="map-wrapper">
       <img src="img/map.jpg" width="1200" height="594" alt="Город Седона, штат Аризона, США">
     </div>
