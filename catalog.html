@@ -21,9 +21,9 @@
   <section class="catalog-filter">
     <h2 class="visually-hidden">Поиск отелей</h2>
     <form class="filter-hotel" method="get" action="/">
-      <fieldset class="filter-hotel-facilities">
+      <fieldset class="filter-hotel-fieldset">
         <legend>Инфраструктура:</legend>
-        <ul class="filter-hotel-facilities-list">
+        <ul class="filter-hotel-list">
           <li>
             <label for="filter-swimming-pool">Бассейн</label>
             <input type="checkbox" name="swimming-pool" id="filter-swimming-pool">
@@ -38,9 +38,9 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter-hotel-type">
+      <fieldset class="filter-hotel-fieldset">
         <legend>Тип жилья:</legend>
-        <ul class="filter-hotel-type-list">
+        <ul class="filter-hotel-list">
           <li>
             <label for="filter-inn">Гостиница</label>
             <input type="checkbox" name="inn" id="filter-inn">
@@ -55,15 +55,22 @@
           </li>
         </ul>
       </fieldset>
-      <label for="filter-cost" aria-label="Стоимость отеля в сутки в рублях">Стоимость в сутки (Р):</label>
-      <p class="filter-cost-range">
-        <span class="filter-cost-min">От 0</span>
-        <span class="filter-cost-max">До 3000</span>
-      </p>
-      <input class="filter-hotel-cost" type="range" name="cost" id="filter-cost" min="0" max="3000"
-             value="2500"
-             aria-valuemin="0"
-             aria-valuemax="3000">
+      <fieldset class="filter-hotel-fieldset">
+        <legend aria-label="Стоимость отеля в сутки в рублях">Стоимость в сутки (Р):</legend>
+        <div class="filter-cost-input">
+          <label for="filter-cost-min" aria-label="Минимальная стоимость отеля">От</label>
+          <input type="text" name="cost-min" id="filter-cost-min" value="0">
+          <label for="filter-cost-max" aria-label="Максимальная стоимость отеля">До</label>
+          <input type="text" name="cost-max" id="filter-cost-max" value="3000">
+        </div>
+        <div class="filter-cost-range" tabindex="0">
+          <div class="out-line">
+            <div class="inner-line"></div>
+            <div class="slider-min"></div>
+            <div class="slider-max"></div>
+          </div>
+        </div>
+      </fieldset>
       <button class="filter-hotel-btn" type="submit">Показать</button>
     </form>
   </section>
@@ -80,10 +87,10 @@
     </div>
     <ul class="catalog-results-sort-arrows">
       <li>
-        <button class="sort-arrow-up" type="button" aria-label="Сортировка по возрастанию"></button>
+        <a class="sort-arrow-up" href="#" aria-label="Сортировка по возрастанию"></a>
       </li>
       <li>
-        <button class="sort-arrow-down" type="button" aria-label="Сортировка по убыванию"></button>
+        <a class="sort-arrow-down" href="#" aria-label="Сортировка по убыванию"></a>
       </li>
     </ul>
   </section>
