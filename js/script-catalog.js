@@ -1,6 +1,6 @@
 'use strict';
 
-function outputUpdate(vol) {
+function outputCost(vol) {
   document.querySelector('.output-text').innerHTML=vol;
 }
 

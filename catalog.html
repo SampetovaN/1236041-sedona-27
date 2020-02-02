@@ -5,7 +5,6 @@
   <title>HTML Academy: Отели Седоны</title>
 </head>
 <body>
-<script type="text/javascript" src="js/outputcost-catalog.js"></script>
 <header class="page-header">
   <a class="header-logo" href="index.html"><img src="img/logo-sedona.svg" width="140" height="71"
                                                 alt="Логотип города Седона"></a>
@@ -56,16 +55,16 @@
           </li>
         </ul>
       </fieldset>
-      <label for="filter-cost" aria-label="Стоимость в сутки отеля в рублях">Стоимость в сутки (Р):</label>
+      <label for="filter-cost" aria-label="Стоимость отеля в сутки в рублях">Стоимость в сутки (Р):</label>
       <p class="filter-cost-range">
         <span class="filter-cost-min">От 0</span>
         <span class="filter-cost-max">До 3000</span>
       </p>
-      <input class="filter-hotel-cost" type="range" name="cost" id="filter-cost" min="0" step="100" max="3000"
+      <input class="filter-hotel-cost" type="range" name="cost" id="filter-cost" min="0" max="3000"
              value="2500"
              aria-valuemin="0"
              aria-valuemax="3000"
-             oninput="outputUpdate(value)">
+             onmousemove="outputCost(value)">
       <span class="visually-hidden output-text">2500</span>
       <button class="filter-hotel-btn" type="submit">Показать</button>
     </form>
@@ -184,5 +183,6 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </p>
 </footer>
+<script type="text/javascript" src="js/script-catalog.js"></script>
 </body>
 </html>
