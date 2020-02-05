@@ -12,6 +12,9 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
+  box-shadow:
+    10px 0 20px 0 #e8e8e8,
+    -10px 0 20px 0 #e8e8e8;
 }
 
 a {
