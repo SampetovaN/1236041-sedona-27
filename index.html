@@ -9,14 +9,14 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="header-logo"><img src="img/logo-sedona.svg" width="140" height="71"
+  <a class="header-logo"><img src="img/logo-sedona.svg" width="140" height="72"
                               alt="Логотип города Седона"></a>
   <nav>
-    <ul class="site-navigation">
-      <li class="item-navigation-left"><a href="">Информация</a></li>
-      <li class="item-navigation-left"><a href="">Фото и видео</a></li>
-      <li class="item-navigation-right"><a href="#map">Карта штата</a></li>
-      <li class="item-navigation-right"><a href="catalog.html">Гостиницы</a></li>
+    <ul class="site-navigation nav-container">
+      <li class="item-navigation-left "><a href="">Информация</a></li>
+      <li class="item-navigation-left item-middle-left"><a href="">Фото и видео</a></li>
+      <li class="item-navigation-right item-middle-right"><a href="#map">Карта штата</a></li>
+      <li class="item-navigation-right "><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -27,11 +27,14 @@
       <img src="img/intro-welcome.svg" width="459" height="353"
            alt="Заголовок сайта города Седона: Добро пожаловать в прекрасную Седону">
     </div>
-    <p class="site-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
   </section>
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества города Седона</h2>
-    <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+    <div class="advantage-text-container-inner">
+      <p class="advantages-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
     <ul class="advantages-list">
       <li class="advantage">
         <div class="advantage-desc  advantage-desc-blue">
@@ -90,9 +93,11 @@
   </section>
   <section class="search-hotels">
     <h2 class="visually-hidden">Поиск отелей в городе Седона</h2>
-    <p class="search-hotels-subheadline">Заинтересовались?</p>
-    <p class="search-hotels-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
-      седоне</p>
+    <div class="search-hotels-text-container-inner">
+      <p class="search-hotels-subheadline">Заинтересовались?</p>
+      <p class="search-hotels-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
+        седоне</p>
+    </div>
     <button class="btn search-hotels-form-btn" type="button">Поиск гостиницы в Седоне</button>
     <form class="search-hotel" method="post" action="/">
       <div class="search-hotel-dates">
@@ -104,16 +109,18 @@
         <label for="search-hotel-end-date">Дата выезда:</label>
         <input class="search-hotel-input" type="text" name="end-date" id="search-hotel-end-date"
                value="4 июля 2017">
-        <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор конечной даты в календаре"></button>
+          <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор конечной даты в календаре"></button>
       </div>
       <div class="search-hotel-person-amount">
-        <label for="search-hotel-adults-amount">Взрослые:</label>
-        <button class="btn btn-minus" type="button" aria-label="Уменьшение количества взрослых на одну единицу">-</button>
+       <label for="search-hotel-adults-amount">Взрослые:</label>
+        <button class="btn btn-minus" type="button" aria-label="Уменьшение количества взрослых на одну единицу">-
+        </button>
         <input class="search-hotel-input" type="text" name="adults-amount" id="search-hotel-adults-amount"
                value="2">
-        <button class="btn btn-plus" type="button" aria-label="Увеличение количества взрослых на одну единицу">+</button>
+        <button class="btn btn-plus" type="button" aria-label="Увеличение количества взрослых на одну единицу">+
+        </button>
 
-        <label for="search-hotel-children-amount">Дети:</label>
+      <label for="search-hotel-children-amount">Дети:</label>
         <button class="btn btn-minus" type="button" aria-label="Уменьшение количества детей на одну единицу">-</button>
         <input class="search-hotel-input" type="text" name="children-amount" id="search-hotel-children-amount"
                value="0">
@@ -128,7 +135,9 @@
     </div>
   </section>
 </main>
+
 <footer class="page-footer">
+  <div class="footer-container">
   <div class="footer-contacts">
     <p class="footer-hashtag">#visitsedona</p>
     <p class="footer-phone">Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p>
@@ -145,6 +154,7 @@
     Website by:
     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </p>
+  </div>
 </footer>
 
 </body>
