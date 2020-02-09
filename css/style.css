@@ -106,6 +106,7 @@ a {
   margin-top: 0;
   margin-bottom: -20px;
   background-color: #ffffff;
+  width: 100%;
 }
 .site-picture {
   min-height: 509px;
@@ -123,16 +124,14 @@ a {
 }
 
 .advantages-inner {
-  margin-top: 38px;
+  margin-top: 37px;
   display: flex;
 
   flex-direction: column;
   align-items: center;
 }
 
-
 .advantages-subtitle {
-
   width: 440px;
   text-align: center;
 
@@ -152,11 +151,43 @@ a {
 
 .advantages-list {
   list-style: none;
+  padding-left: 0 ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .advantage-add {
+  width: 100%;
+}
+.advantage-half {
+  margin-top: -30px;
+  width: 33.3%;
+}
+
+.advantage-container{
+  display: flex;
+  flex-direction: row;
+
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.advantage-list {
+  margin-top: -10px;
+  display: flex;
+  height: 330px;
+  padding-left: 0 ;
+}
+.rest {
+  flex-grow: 1;
+  margin-top: -20px;
 }
 
 .advantage-desc {
   text-align: center;
   background-color: #eeeeee;
+  max-height: 256px;
 }
 
 .advantage-desc-blue {
@@ -258,7 +289,6 @@ a {
   background-image: url("../img/map.jpg");
 }
 
-
 .page-footer {
   margin-top: auto;
   margin-bottom: auto;
@@ -323,8 +353,22 @@ a {
 .catalog-filter {
   background-color: #d1d1d1;
   background-image: url("../img/filter-background.jpg");
+  background-position: 0 -300px ;
 }
+.filter-hotel {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 73px;
 
+}
+.filter-block {
+  min-width: 241px;
+
+}
+div.filter-block:last-child {
+  margin-left: auto ;
+
+}
 .filter-hotel fieldset {
   border: 0;
 }
@@ -382,13 +426,21 @@ a {
 .catalog-results {
   background-color: #fefefe;
 }
+.results-container {
+  display: flex;
+  padding: 30px 73px;
+}
+
 .catalog-results-text {
+  min-width: 135px;
   font-size: 26px;
   line-height: 21px;
   font-weight: bold;
   color: #000000;
 }
-
+.catalog-results-sort {
+  flex-grow: 1;
+}
 .catalog-results-sort p {
   font-size: 12px;
   line-height: 18px;
@@ -396,6 +448,9 @@ a {
 }
 .catalog-results ul {
   list-style: none;
+}
+.catalog-results-sort-buttons {
+  margin-left: auto;
 }
 .catalog-results-sort-buttons a {
   font-size: 12px;
