@@ -78,7 +78,7 @@ a {
 }
 
 .item-middle-left {
-  margin-right: 20% ;
+  margin-right: 20%;
 }
 
 .site-navigation a {
@@ -113,18 +113,21 @@ a {
   width: 100%;
   background-color: #d1d1d1;
   background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
-  background-position: center 452px, 0 -83px;
+  background-position: center 453px, 0 -84px;
   background-repeat: no-repeat;
+
 }
 
 .site-picture img {
   display: block;
   margin: 0 auto;
   padding-top: 78px;
+
 }
 
 .advantages-inner {
-  margin-top: 37px;
+  padding-top: 39px;
+
   display: flex;
 
   flex-direction: column;
@@ -143,7 +146,6 @@ a {
 
 .advantages-text {
   text-align: center;
-
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -151,45 +153,47 @@ a {
 
 .advantages-list {
   list-style: none;
-  padding-left: 0 ;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-}
 
- .advantage-add {
+}
+ .advantage-big {
   width: 100%;
 }
-.advantage-half {
-  margin-top: -30px;
+.advantage-small {
   width: 33.3%;
 }
 
-.advantage-container{
+.advantage-small div {
+  padding: 67px 73px;
+}
+
+.advantage-container {
   display: flex;
   flex-direction: row;
-
 }
-.reverse {
+.advantage-container-reverse {
   flex-direction: row-reverse;
 }
 
 .advantage-list {
-  margin-top: -10px;
   display: flex;
-  height: 330px;
-  padding-left: 0 ;
 }
-.rest {
-  flex-grow: 1;
-  margin-top: -20px;
+.advantage-list-item {
+
+  padding: 73px 91px;
 }
 
 .advantage-desc {
   text-align: center;
   background-color: #eeeeee;
-  max-height: 256px;
 }
-
+.advantage-photo img {
+  display: block;
+  margin: 0 auto;
+}
 .advantage-desc-blue {
   background-color: #81b3d2;
 }
@@ -221,8 +225,6 @@ a {
 
 .advantage-list-item {
   text-align: center;
-
-
 }
 
 .advantage-list-item h4 {
@@ -281,8 +283,6 @@ a {
   display: none;
 }
 
-
-
 .map-wrapper {
   width: 100%;
   height: 594px;
@@ -297,12 +297,12 @@ a {
 .footer-container {
   display: flex;
   align-items: center;
-  padding: 30px 73px;
+  padding: 0 73px;
 }
 
 .footer-contacts {
-  margin: 0 auto;
-  width: 33%;
+  width: 33.3%;
+
 }
 
 .footer-hashtag {
@@ -310,6 +310,9 @@ a {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 
 .footer-phone,
@@ -318,13 +321,10 @@ a {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+
 }
 .footer-social {
-  width: 33%;
-}
-.footer-copyright-container {
-  margin: 0 auto;
-  width: 33%;
+  width: 33.3%;
 }
 
 .footer-social-list {
@@ -332,7 +332,6 @@ a {
 }
 
 .footer-social-list a {
-
   background-color: #81b3d2;
 }
 
@@ -345,6 +344,10 @@ a {
   background-color: #5496bd;
 }
 
+.footer-copyright-container {
+  width: 33.3%;
+}
+
 .footer-copyright {
   text-align: center;
 
@@ -353,24 +356,24 @@ a {
 .catalog-filter {
   background-color: #d1d1d1;
   background-image: url("../img/filter-background.jpg");
-  background-position: 0 -300px ;
+  background-position: 0 -300px;
 }
 .filter-hotel {
   display: flex;
   flex-direction: row;
-  padding: 30px 73px;
+  padding: 36px 60px;
 
 }
-.filter-block {
+.filter-hotel-fieldset {
+  border: 0;
   min-width: 241px;
 
 }
-div.filter-block:last-child {
-  margin-left: auto ;
 
-}
-.filter-hotel fieldset {
-  border: 0;
+
+.filter-hotel-fieldset:last-child {
+  margin-left: auto;
+
 }
 
 .filter-hotel legend {
@@ -387,6 +390,7 @@ div.filter-block:last-child {
 }
 .filter-hotel-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .filter-hotel input[type="text"] {
@@ -417,7 +421,7 @@ div.filter-block:last-child {
   border-radius: 2px;
 }
 .filter-hotel-btn:hover,
-.filter-hotel-btn:focus{
+.filter-hotel-btn:focus {
   color: #000000;
   background-color: #ffffff;
 
@@ -462,11 +466,11 @@ div.filter-block:last-child {
 }
 
 .catalog-results-sort-buttons a:hover,
-.catalog-results-sort-buttons a:focus{
+.catalog-results-sort-buttons a:focus {
   color: #81b3d2;
 }
 
-.catalog-results-sort-buttons a:active{
+.catalog-results-sort-buttons a:active {
   color: #000000;
   text-decoration: none;
 }
@@ -477,15 +481,17 @@ div.filter-block:last-child {
 .catalog-hotels {
   background-color: #fefefe;
 }
-.catalog-hotels ul {
+.catalog-hotels  ul {
   list-style: none;
+  padding-left: 0;
   margin: 0 73px;
  }
 .catalog-hotel {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  padding: 30px 0;
+  padding: 0 0 30px;
+
 }
 .hotel-image {
   margin-right: 30px;

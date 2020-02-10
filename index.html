@@ -10,8 +10,9 @@
 <body>
 <div class="content-wrapper">
   <header class="page-header">
-    <a class="header-logo"><img src="img/logo-sedona.svg" width="140" height="72"
-                                alt="Логотип города Седона"></a>
+    <a class="header-logo">
+      <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
+    </a>
     <nav>
       <ul class="site-navigation">
         <li class="item-navigation-left"><a href="">Информация</a></li>
@@ -25,8 +26,7 @@
     <section class="site-intro">
       <h1 class="visually-hidden">Сайт Города Седона</h1>
       <div class="site-picture">
-        <img src="img/intro-welcome.svg" width="459" height="353"
-             alt="Заголовок сайта города Седона: Добро пожаловать в прекрасную Седону">
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="Заголовок сайта города Седона: Добро пожаловать в прекрасную Седону">
       </div>
     </section>
     <section class="advantages">
@@ -36,60 +36,60 @@
         <p class="advantages-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-      <ul class="advantages-list advantage-add">
-        <li class="advantage">
+      <ul class="advantages-list">
+        <li class="advantage advantage-big">
           <div class="advantage-container">
-            <div class="advantage-desc  advantage-desc-blue">
-              <h3 class="advantage-title  advantage-title-white">Настоящий городок</h3>
-
+            <div class="advantage-desc advantage-desc-blue">
+              <h3 class="advantage-title advantage-title-white">Настоящий городок</h3>
               <span class="advantage-number advantage-number-white">— №1 —</span>
-              <p class="advantage-text advantage-text-white">Седона — не аттракцион для туристов, там течёт своя
-                жизнь</p>
+              <p class="advantage-text advantage-text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="advantage-photo">
-              <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фотография города Седона">
+              <img src="img/feature-picture-1.jpg" width="800" height="258" alt="Фотография города Седона">
             </div>
           </div>
           <ul class="advantage-list">
             <li class="advantage-list-item">
               <h4>Жильё</h4>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
             <li class="advantage-list-item">
               <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
             <li class="advantage-list-item">
               <h4>Сувениры</h4>
-              <p>Не только китайского, но и местного производства!</p></li>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
           </ul>
         </li>
-
-        <li class="advantage advantage-add">
-          <div class="advantage-container  reverse">
+        <li class="advantage advantage-big">
+          <div class="advantage-container advantage-container-reverse">
             <div class="advantage-desc advantage-desc-blue">
               <h3 class="advantage-title advantage-title-white">Там есть Мост дьявола</h3>
               <span class="advantage-number advantage-number-white">— №2 —</span>
               <p class="advantage-text advantage-text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <div class="advantage-photo">
-              <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фотография Моста Дьявола">
+              <img src="img/feature-picture-2.jpg" width="800" height="258" alt="Фотография Моста Дьявола">
             </div>
           </div>
         </li>
-        <li class="advantage advantage-half">
+        <li class="advantage advantage-small">
           <div class="advantage-desc">
             <h3 class="advantage-title">Небольшая площадь</h3>
             <span class="advantage-number">— №3 —</span>
             <p class="advantage-text">Все достопримечательности находятся очень близко</p>
           </div>
         </li>
-        <li class="advantage advantage-half">
+        <li class="advantage advantage-small">
           <div class="advantage-desc">
             <h3 class="advantage-title">Красивая дорога</h3>
             <span class="advantage-number">— №4 —</span>
             <p class="advantage-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
-        <li class="advantage advantage-half">
+        <li class="advantage advantage-small">
           <div class="advantage-desc">
             <h3 class="advantage-title">Мало туристов</h3>
             <span class="advantage-number">— №5 —</span>
@@ -102,37 +102,25 @@
       <h2 class="visually-hidden">Поиск отелей в городе Седона</h2>
       <div class="search-hotels-inner">
         <p class="search-hotels-subheadline">Заинтересовались?</p>
-        <p class="search-hotels-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
-          седоне</p>
+        <p class="search-hotels-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
       <button class="btn search-hotels-form-btn" type="button">Поиск гостиницы в Седоне</button>
       <form class="search-hotel" method="post" action="/">
         <div class="search-hotel-dates">
           <label for="search-hotel-start-date">Дата заезда:</label>
-          <input class="search-hotel-input" type="text" name="start-date" id="search-hotel-start-date"
-                 value="24 апреля 2017">
-          <button class="search-hotel-btn-calendar" type="button"
-                  aria-label="Выбор начальной даты в календаре"></button>
-
+          <input class="search-hotel-input" type="text" name="start-date" id="search-hotel-start-date" value="24 апреля 2017">
+          <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор начальной даты в календаре"></button>
           <label for="search-hotel-end-date">Дата выезда:</label>
-          <input class="search-hotel-input" type="text" name="end-date" id="search-hotel-end-date"
-                 value="4 июля 2017">
-          <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор конечной даты в календаре"></button>
-        </div>
+          <input class="search-hotel-input" type="text" name="end-date" id="search-hotel-end-date" value="4 июля 2017">
+          <button class="search-hotel-btn-calendar" type="button" aria-label="Выбор конечной даты в календаре"></button></div>
         <div class="search-hotel-person-amount">
           <label for="search-hotel-adults-amount">Взрослые:</label>
-          <button class="btn btn-minus" type="button" aria-label="Уменьшение количества взрослых на одну единицу">-
-          </button>
-          <input class="search-hotel-input" type="text" name="adults-amount" id="search-hotel-adults-amount"
-                 value="2">
-          <button class="btn btn-plus" type="button" aria-label="Увеличение количества взрослых на одну единицу">+
-          </button>
-
+          <button class="btn btn-minus" type="button" aria-label="Уменьшение количества взрослых на одну единицу">-</button>
+          <input class="search-hotel-input" type="text" name="adults-amount" id="search-hotel-adults-amount" value="2">
+          <button class="btn btn-plus" type="button" aria-label="Увеличение количества взрослых на одну единицу">+</button>
           <label for="search-hotel-children-amount">Дети:</label>
-          <button class="btn btn-minus" type="button" aria-label="Уменьшение количества детей на одну единицу">-
-          </button>
-          <input class="search-hotel-input" type="text" name="children-amount" id="search-hotel-children-amount"
-                 value="0">
+          <button class="btn btn-minus" type="button" aria-label="Уменьшение количества детей на одну единицу">-</button>
+          <input class="search-hotel-input" type="text" name="children-amount" id="search-hotel-children-amount" value="0">
           <button class="btn btn-plus" type="button" aria-label="Увеличение количества детей на одну единицу">+</button>
         </div>
         <button class="btn search-hotel-btn" type="submit">Найти</button>
@@ -161,8 +149,7 @@
       </div>
       <div class="footer-copyright-container">
         <p class="footer-copyright">
-          Website by:
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          Website by:<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
       </div>
     </div>
