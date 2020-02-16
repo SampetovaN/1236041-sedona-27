@@ -42,6 +42,8 @@ input[type="checkbox"],
   text-transform: uppercase;
 
   border: none;
+  line-height: 26px;
+  font-size: 21px;
 }
 
 .content-wrapper {
@@ -302,8 +304,6 @@ input[type="checkbox"],
   margin-left: auto;
   padding: 30px 140px;
 
-  font-size: 21px;
-  line-height: 26px;
 }
 
 .search-hotels-form-btn:focus,
@@ -435,7 +435,7 @@ input[type="checkbox"],
   padding: 6px 13px;
 
   font-size: 14px;
-  line-height: 26px;
+
   color: #000000;
 }
 
@@ -459,8 +459,7 @@ input[type="checkbox"],
   width: 100%;
 
   background-color: #81b3d2;
-  font-size: 21px;
-  line-height: 26px;
+
 
   padding: 16px 173px;
   margin-top: 55px;
@@ -489,8 +488,8 @@ input[type="checkbox"],
 .footer-container {
   box-sizing: border-box;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   justify-content: flex-start;
   margin-bottom: 0;
 }
@@ -532,6 +531,8 @@ input[type="checkbox"],
 }
 .footer-social {
   flex-grow: 1;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .footer-social-list {
@@ -554,7 +555,7 @@ input[type="checkbox"],
   height: 50px;
   background-color: #81b3d2;
 }
-li.social-button:last-child  {
+.social-list-item:last-child .social-button  {
   margin-right: 0;
 }
 
@@ -569,13 +570,14 @@ li.social-button:last-child  {
 
 .footer-copyright-container {
   flex-grow: 1;
-
  }
 
 .footer-copyright {
+
   text-align: center;
   vertical-align: middle;
-  margin-top: 7px;
+  margin-top: 4px;
+
   margin-bottom: 0;
 
 }
@@ -803,6 +805,7 @@ li.catalog-hotel:last-child {
 
 .hotel-btn-more,
 .hotel-btn-book{
+  font-size: 14px;
   padding: 3px 16px;
   margin: 0;
 }
