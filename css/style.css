@@ -350,10 +350,6 @@ input[type="checkbox"],
 .search-hotel input[type='text'] .active-input-search {
   background-color: #ffffff;
 }
-.input-date-col {
-  display: flex;
-  flex-direction: column;
-}
 
 .input-date-row {
   margin-top: 5px;
@@ -495,7 +491,6 @@ input[type="checkbox"],
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
-  /*align-items: center;*/
   justify-content: center;
   margin-bottom: 0;
 }
@@ -756,9 +751,6 @@ li.catalog-hotel:last-child {
 
 .hotel-content {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
 }
 .hotel-name {
