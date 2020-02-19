@@ -24,36 +24,36 @@
     <section class="catalog-filter">
       <h2 class="visually-hidden">Поиск отелей</h2>
       <form class="filter-hotel" method="get" action="/">
-        <fieldset class="filter-hotel-fieldset">
+        <fieldset class="filter-hotel-fieldset filter-checkbox-list">
           <legend>Инфраструктура:</legend>
           <ul class="filter-hotel-list">
             <li>
-              <input type="checkbox" name="swimming-pool" id="filter-swimming-pool">
+              <input class="filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
               <label for="filter-swimming-pool">Бассейн</label>
             </li>
             <li>
-              <input type="checkbox" name="parking" id="filter-parking">
+              <input  class="filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
               <label for="filter-parking">Парковка</label>
             </li>
             <li>
-              <input type="checkbox" name="wifi" id="filter-wifi">
+              <input class="filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
               <label for="filter-wifi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-hotel-fieldset">
+        <fieldset class="filter-hotel-fieldset filter-checkbox-list">
           <legend>Тип жилья:</legend>
           <ul class="filter-hotel-list">
-            <li>
-              <input type="checkbox" name="inn" id="filter-inn">
+            <li >
+              <input class="filter-input-checkbox" type="checkbox" name="inn" id="filter-inn" checked>
               <label for="filter-inn">Гостиница</label>
             </li>
-            <li>
-              <input type="checkbox" name="motel" id="filter-motel">
+            <li >
+              <input class="filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
             <li>
-              <input type="checkbox" name="apartments" id="filter-apartments">
+              <input class="filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
               <label for="filter-apartments">Апартаменты</label>
             </li>
           </ul>
@@ -61,10 +61,14 @@
         <fieldset class="filter-hotel-fieldset">
           <legend aria-label="Стоимость отеля в сутки в рублях">Стоимость в сутки (Р):</legend>
           <div class="filter-cost-input">
+
             <label for="filter-cost-min" aria-label="Минимальная стоимость отеля">От</label>
             <input type="text" name="cost-min" id="filter-cost-min" value="0">
+
+
             <label for="filter-cost-max" class="filter-cost-border" aria-label="Максимальная стоимость отеля">До</label>
             <input type="text" name="cost-max" id="filter-cost-max" value="3000">
+
           </div>
           <div class="filter-cost-range" tabindex="0">
             <div class="out-line">
@@ -91,10 +95,18 @@
         </div>
         <ul class="catalog-results-sort-arrows">
           <li>
-            <a class="sort-arrow-up" href="#" aria-label="Сортировка по возрастанию"></a>
+            <a class="sort-arrow sort-arrow-up" href="#" aria-label="Сортировка по возрастанию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
           </li>
           <li>
-            <a class="sort-arrow-down" href="#" aria-label="Сортировка по убыванию"></a>
+            <a class="sort-arrow sort-arrow-down sort-arrow-active" href="#" aria-label="Сортировка по убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
