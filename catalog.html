@@ -58,17 +58,17 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-hotel-fieldset">
+        <fieldset class="filter-hotel-fieldset filter-cost">
           <legend aria-label="Стоимость отеля в сутки в рублях">Стоимость в сутки (Р):</legend>
           <div class="filter-cost-input">
-
-            <label for="filter-cost-min" aria-label="Минимальная стоимость отеля">От</label>
-            <input type="text" name="cost-min" id="filter-cost-min" value="0">
-
-
-            <label for="filter-cost-max" class="filter-cost-border" aria-label="Максимальная стоимость отеля">До</label>
-            <input type="text" name="cost-max" id="filter-cost-max" value="3000">
-
+            <div class="cost-input-col">
+              <label for="filter-cost-min" aria-label="Минимальная стоимость отеля">От</label>
+              <input type="text" name="cost-min" id="filter-cost-min" value="0">
+            </div>
+            <div class="cost-input-col">
+              <label for="filter-cost-max" class="filter-cost-border" aria-label="Максимальная стоимость отеля">До</label>
+              <input type="text" name="cost-max" id="filter-cost-max" value="3000">
+            </div>
           </div>
           <div class="filter-cost-range" tabindex="0">
             <div class="out-line">
@@ -112,23 +112,20 @@
       </div>
       <ul class="catalog-hotels">
         <li class="catalog-hotel">
-
           <div class="hotel-image">
             <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Фотография Отеля Amara Resort & Spa">
           </div>
           <div class="hotel-content">
             <h3 class="hotel-name"><a href="">Amara Resort & Spa</a></h3>
-            <div class="hotel-content-columns">
-              <div class="hotel-content-column">
+              <div class="hotel-content-row desc-hotel-row">
                 <span class="hotel-type">Гостиница</span>
-                <a class="btn hotel-btn-more" href="">Подробнее</a>
-              </div>
-              <div class="hotel-content-column">
                 <span class="hotel-price">От 4000 Р.</span>
+              </div>
+              <div class="hotel-content-row btn-hotel-row">
+                <a class="btn hotel-btn-more" href="">Подробнее</a>
                 <a class="btn hotel-btn-book" href="">Забронировать</a>
               </div>
             </div>
-          </div>
           <div class="hotel-rates">
             <ul class="hotel-rates-stars">
               <li class="hotel-rates-star"></li>
@@ -145,16 +142,14 @@
           </div>
           <div class="hotel-content">
             <h3 class="hotel-name"><a href="">Desert Quail Inn</a></h3>
-            <div class="hotel-content-columns">
-              <div class="hotel-content-column">
+              <div class="hotel-content-row desc-hotel-row">
                 <span class="hotel-type">Мотель</span>
-                <a class="btn hotel-btn-more" href="">Подробнее</a>
-              </div>
-              <div class="hotel-content-column">
                 <span class="hotel-price">От 3000 Р.</span>
+              </div>
+              <div class="hotel-content-row btn-hotel-row">
+                <a class="btn hotel-btn-more" href="">Подробнее</a>
                 <a class="btn hotel-btn-book" href="">Забронировать</a>
               </div>
-            </div>
           </div>
           <div class="hotel-rates">
             <ul class="hotel-rates-stars">
@@ -171,16 +166,14 @@
           </div>
           <div class="hotel-content">
             <h3 class="hotel-name"><a href="">Villas at Poco Diablo</a></h3>
-            <div class="hotel-content-columns">
-              <div class="hotel-content-column">
+              <div class="hotel-content-row desc-hotel-row">
                 <span class="hotel-type">Апартаменты</span>
-                <a class="btn hotel-btn-more" href="">Подробнее</a>
-              </div>
-              <div class="hotel-content-column">
                 <span class="hotel-price">От 2000 Р.</span>
+              </div>
+              <div class="hotel-content-row btn-hotel-row">
+                <a class="btn hotel-btn-more" href="">Подробнее</a>
                 <a class="btn hotel-btn-book" href="">Забронировать</a>
               </div>
-            </div>
           </div>
           <div class="hotel-rates">
             <ul class="hotel-rates-stars">
@@ -193,14 +186,12 @@
       </ul>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="footer-container">
       <div class="footer-contacts">
         <p class="footer-hashtag">#visitsedona</p>
         <p class="footer-phone">Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p>
       </div>
-
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="social-list-item">
