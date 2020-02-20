@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вероника Сампетова](https://up.htmlacademy.ru/htmlcss/27/user/1236041).
-* Наставник: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
