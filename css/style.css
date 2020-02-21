@@ -1035,6 +1035,7 @@ li.catalog-hotel:last-child {
 .hotel-image {
   margin-right: 30px;
   margin-bottom: 0;
+  width: 135px;
 }
 
 .hotel-image img {
