@@ -751,7 +751,7 @@ input[type="checkbox"],
 }
 .filter-slider:hover,
 .filter-slider:focus {
-  background-image: url("../img/filter-button.svg");
+  background-image: url("../img/filter-button-hover.svg");
   background-repeat: no-repeat;
   width: 22px;
   height: 25px;
@@ -1059,7 +1059,9 @@ li.catalog-hotel:last-child {
   align-items: center;
 }
 
-
+.desc-hotel-row {
+  margin-bottom: 5px;
+}
 .desc-hotel-row span {
   margin-right: 5%;
 }
@@ -1100,7 +1102,7 @@ li.catalog-hotel:last-child {
 .hotel-btn-more,
 .hotel-btn-book{
   font-size: 14px;
-  padding: 2px 17px;
+  padding: 0 17px;
   margin: 0;
 }
 
