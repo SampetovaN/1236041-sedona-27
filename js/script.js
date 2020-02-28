@@ -43,4 +43,13 @@ searchHotelForm.addEventListener('submit', function (evt) {
   }
 
 });
+window.addEventListener('keydown', function (evt) {
+ if (evt.keyCode === 27){
+   if (searchHotelForm.classList.contains('search-hotel-popup')){
+     evt.preventDefault();
+     searchHotelForm.classList.remove('search-hotel-popup');
+     searchHotelForm.classList.add('search-hotel-hidden');
+   }
+ }
+});
 

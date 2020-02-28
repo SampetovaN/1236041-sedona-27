@@ -429,7 +429,11 @@ input[type="checkbox"],
 }
 
 .search-hotel-popup {
+  -moz-animation-name: move-down;
+  -webkit-animation-name: move-down;
   animation-name: move-down;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
 
