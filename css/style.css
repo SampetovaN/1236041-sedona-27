@@ -11,6 +11,12 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes move-down {
+  from {
+    transform: translateY(-85.5px);
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -416,7 +422,15 @@ input[type="checkbox"],
   padding: 47px 55px;
   padding-bottom: 54px;
   box-shadow:  -15px 15px 20px  -15px rgba(0, 1, 1, 0.2),  15px 15px 20px  -15px rgba(0, 1, 1, 0.2);
+}
 
+.search-hotel-hidden {
+  display: none;
+}
+
+.search-hotel-popup {
+  animation-name: move-down;
+  animation-duration: 1s;
 }
 
 .search-hotel label,
@@ -515,10 +529,7 @@ input[type="checkbox"],
 .person-amount-input {
   box-sizing: border-box;
   max-width: 40px;
-  padding-left: 18px;
-  padding-top: 7px;
-  padding-bottom: 5px;
-  padding-right: 0;
+  text-align: center;
   height: 37px;
 
 }
