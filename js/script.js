@@ -3,8 +3,7 @@
 var searchHotelBtn = document.querySelector('.search-hotels-form-btn');
 var searchHotelForm = document.querySelector('.search-hotel');
 var startDateCalendar = searchHotelForm.querySelector('.start-date-calendar');
-var startDate = searchHotelForm.querySelector('[name=start-date]');
-var endDate = searchHotelForm.querySelector('[name=end-date]');
+var allInputHotelForm = searchHotelForm.querySelectorAll('.search-hotel-input');
 var adultsAmount = searchHotelForm.querySelector('[name=adults-amount]');
 var childrenAmount = searchHotelForm.querySelector('[name=children-amount]');
 var storageChildAmount = '';
@@ -35,7 +34,14 @@ searchHotelBtn.addEventListener('click', function (evt) {
 });
 
 searchHotelForm.addEventListener('submit', function (evt) {
-  if (!startDate.value || !endDate.value || !adultsAmount.value || !childrenAmount.value) {
+  var inputIsValid = true;
+  for (var i = 0; i < allInputHotelForm.length; i++){
+    if (!allInputHotelForm[i].value){
+      inputIsValid = false;
+      break;
+    }
+  }
+  if (!inputIsValid) {
     evt.preventDefault();
   } else {
     localStorage.setItem('adult-amount', adultsAmount.value);
