@@ -15,10 +15,10 @@
     </a>
     <nav>
       <ul class="site-navigation">
-        <li class="item-navigation-left"><a href="">Информация</a></li>
-        <li class="item-navigation-left"><a href="">Фото и видео</a></li>
-        <li class="item-navigation-right"><a href="#map">Карта штата</a></li>
-        <li class="item-navigation-right"><a href="catalog.html">Гостиницы</a></li>
+        <li><a href="">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
+        <li><a href="#map">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -46,11 +46,11 @@
         <fieldset class="filter-hotel-fieldset filter-checkbox-list">
           <legend>Тип жилья:</legend>
           <ul class="filter-hotel-list">
-            <li >
+            <li>
               <input class="filter-input-checkbox" type="checkbox" name="inn" id="filter-inn" checked>
               <label for="filter-inn">Гостиница</label>
             </li>
-            <li >
+            <li>
               <input class="filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
@@ -65,11 +65,11 @@
           <div class="filter-cost-input">
             <div class="cost-input-col">
               <label for="filter-cost-min" aria-label="Минимальная стоимость отеля">От</label>
-              <input type="text" name="cost-min" id="filter-cost-min" value="0">
+              <input type="text" name="cost-min" id="filter-cost-min" value="0" required>
             </div>
             <div class="cost-input-col">
               <label for="filter-cost-max" class="filter-cost-border" aria-label="Максимальная стоимость отеля">До</label>
-              <input type="text" name="cost-max" id="filter-cost-max" value="3000">
+              <input type="text" name="cost-max" id="filter-cost-max" value="3000" required>
             </div>
           </div>
           <div class="filter-cost-range" tabindex="0">
@@ -228,5 +228,6 @@
     </div>
   </footer>
 </div>
+<script src="js/script-min.js"></script>
 </body>
 </html>
