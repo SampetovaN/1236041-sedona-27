@@ -459,7 +459,6 @@ input[type='checkbox'],
   color: #000000;
   text-transform: inherit;
 }
-
 .search-hotel-input {
   border: 0;
   background-color: #f2f2f2;
@@ -498,6 +497,51 @@ input[type='checkbox'],
    padding-left: 18px;
    flex-grow: 1;
    height: 39px;
+}
+
+.date-input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.date-input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.date-input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.date-input:-moz-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.date-input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.date-input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .search-hotel-btn-calendar {

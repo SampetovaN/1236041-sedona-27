@@ -9,7 +9,7 @@ if(filterHotelForm){
 }
 
 if(searchHotelForm) {
-  var startDateCalendar = searchHotelForm.querySelector('.start-date-calendar');
+  var startDate = searchHotelForm.querySelector('[name=start-date]');
   var allInputHotelForm = searchHotelForm.querySelectorAll('.search-hotel-input');
   var adultsAmount = searchHotelForm.querySelector('[name=adults-amount]');
   var childrenAmount = searchHotelForm.querySelector('[name=children-amount]');
@@ -61,7 +61,7 @@ if (searchHotelBtn) {
     evt.preventDefault();
     searchHotelForm.classList.toggle('search-hotel-popup');
     searchHotelForm.classList.toggle('search-hotel-hidden');
-    startDateCalendar.focus();
+    startDate.focus();
     if (isStorageSupp) {
       if (storageChildAmount) {
         childrenAmount.value = storageChildAmount;
