@@ -287,20 +287,22 @@ input[type='checkbox'],
   align-items: center;
 }
 
-.advantage-photo {
+.advantage-photo-wrapper {
+  background-repeat: no-repeat;
+  background-position-y: -75px;
+  background-size: 100%;
   height: 258px;
-  overflow: hidden;
   width: 100%;
 }
 
-.advantage-photo img {
-  display: block;
-  width: 100%;
-  margin: 0;
-  position: relative;
-  bottom: 75px;
+.advantage-photo-town {
+  background-image: url('../img/feature-picture-1.jpg');
 
 }
+.advantage-photo-bridge {
+  background-image: url('../img/feature-picture-2.jpg');
+}
+
 .advantage-desc-blue {
   background-color: #81b3d2;
   padding-left: 52px;
