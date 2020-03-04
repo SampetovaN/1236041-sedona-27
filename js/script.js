@@ -1,14 +1,12 @@
-'use strict';
-
 var searchHotelBtn = document.querySelector('.search-hotels-form-btn');
 var searchHotelForm = document.querySelector('.search-hotel-modal');
 var filterHotelForm = document.querySelector('.filter-hotel');
 
-if(filterHotelForm){
+if (filterHotelForm) {
   var costFilterHotel = filterHotelForm.querySelectorAll('[type=text]');
 }
 
-if(searchHotelForm) {
+if (searchHotelForm) {
   var startDate = searchHotelForm.querySelector('[name=start-date]');
   var allInputHotelForm = searchHotelForm.querySelectorAll('.search-hotel-input');
   var adultsAmount = searchHotelForm.querySelector('[name=adults-amount]');
@@ -27,18 +25,21 @@ try {
 }
 
 
-if (searchHotelForm){
+if (searchHotelForm) {
   searchHotelForm.classList.add('search-hotel-hidden');
   searchHotelForm.addEventListener('submit', function (evt) {
     var inputIsValid = true;
-    for (var i = 0; i < allInputHotelForm.length; i++){
-      if (!allInputHotelForm[i].value){
+    for (var i = 0; i < allInputHotelForm.length; i++) {
+      if (!allInputHotelForm[i].value) {
         inputIsValid = false;
         break;
       }
     }
     if (!inputIsValid) {
       evt.preventDefault();
+      searchHotelForm.classList.remove('search-hotel-shake');
+      searchHotelForm.offsetWidth = searchHotelForm.offsetWidth;
+      searchHotelForm.classList.add('search-hotel-shake');
     } else {
       localStorage.setItem('adult-amount', adultsAmount.value);
       localStorage.setItem('children-amount', childrenAmount.value);
@@ -46,8 +47,8 @@ if (searchHotelForm){
 
   });
   window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27){
-      if (searchHotelForm.classList.contains('search-hotel-popup')){
+    if (evt.keyCode === 27) {
+      if (searchHotelForm.classList.contains('search-hotel-popup')) {
         evt.preventDefault();
         searchHotelForm.classList.remove('search-hotel-popup');
         searchHotelForm.classList.add('search-hotel-hidden');
@@ -59,21 +60,36 @@ if (searchHotelForm){
 if (searchHotelBtn) {
   searchHotelBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
-    searchHotelForm.classList.toggle('search-hotel-popup');
-    searchHotelForm.classList.toggle('search-hotel-hidden');
-    startDate.focus();
-    if (isStorageSupp) {
-      if (storageChildAmount) {
-        childrenAmount.value = storageChildAmount;
+    searchHotelForm.classList.remove('search-hotel-hidden');
+    if (searchHotelForm.classList.contains('search-hotel-popup')) {
+      searchHotelForm.classList.remove('search-hotel-popup');
+      searchHotelForm.classList.add('search-hotel-close');
+      if (searchHotelForm.classList.contains('search-hotel-close')) {
+        searchHotelForm.classList.add('search-hotel-close');
+        setTimeout(function () {
+          searchHotelForm.classList.add('search-hotel-hidden');
+        }, 900);
+
       }
-      if (storageAdultAmount) {
-        adultsAmount.value = storageAdultAmount;
+      searchHotelForm.classList.remove('search-hotel-shake');
+    } else {
+      searchHotelForm.classList.add('search-hotel-popup');
+      searchHotelForm.classList.remove('search-hotel-close');
+      startDate.focus();
+      if (isStorageSupp) {
+        if (storageChildAmount) {
+          childrenAmount.value = storageChildAmount;
+        }
+        if (storageAdultAmount) {
+          adultsAmount.value = storageAdultAmount;
+        }
       }
     }
+
   });
 }
 
-if(filterHotelForm) {
+if (filterHotelForm) {
   filterHotelForm.addEventListener('submit', function (evt) {
     var inputCostIsValid = true;
     for (var i = 0; i < costFilterHotel.length; i++) {
