@@ -509,7 +509,7 @@ input[type='checkbox'],
   border: 0;
   background-color: #f2f2f2;
 }
-.search-hotel-input:hover{
+.search-hotel-input:hover {
   background-color: #ebebeb;
   outline: 0;
 }
@@ -606,7 +606,7 @@ input[type='checkbox'],
   fill: #000000;
 
 }
-.search-hotel-btn-calendar:active svg{
+.search-hotel-btn-calendar:active svg {
   fill: #81b3d2;
 }
 
@@ -626,11 +626,11 @@ input[type='checkbox'],
   align-items: center;
 }
 
-.input-amount-row label{
+.input-amount-row label {
   margin-right: 9px;
 
 }
-.input-amount-row:last-child label{
+.input-amount-row:last-child label {
   margin-right: 0;
 }
 
