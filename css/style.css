@@ -137,14 +137,17 @@ input[type='checkbox'],
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:focus,
+.site-navigation .nav-item-active:focus,
+.site-navigation .nav-item-active:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.site-navigation .nav-item-active:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.site-navigation a.site-active {
+.site-navigation .nav-item-active {
   color: #766357;
 }
 
@@ -1126,11 +1129,12 @@ input[type='checkbox'],
   color: #81b3d2;
 }
 
-.catalog-results-sort-buttons a:active {
+.catalog-results-sort-buttons a:active,
+.catalog-results-sort-buttons .filter-active:active {
   color: #000000;
   text-decoration: none;
 }
-.catalog-results-sort-buttons a.filter-active {
+.catalog-results-sort-buttons .filter-active {
   color: #81b3d2;
   text-decoration: none;
 }
